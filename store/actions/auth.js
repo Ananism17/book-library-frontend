@@ -25,13 +25,18 @@ export const auth = (email, password) => {
   return (dispatch) => {
     const apiUrl = BASE_URL + "api/users/auth";
 
+    const config = {
+      withCredentials: true,
+    };
+
     const apiData = {
       email,
       password,
     };
     axios
-      .post(apiUrl, apiData)
+      .post(apiUrl, apiData, config)
       .then((response) => {
+        console.log(response.data);
         if (response.data.status) {
           dispatch(authLogin());
         } else {

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 import Router from "next/router";
 
 //react-bootstrap
@@ -17,8 +18,17 @@ import { logout } from "../../store/actions/auth";
 
 //react-icons
 import { MdLogout } from "react-icons/md";
+import AddBookComponent from "../HomeComponents/AddBookComponent";
 
 const NavbarComponent = () => {
+  //boolean-variables
+  const [loader, setLoader] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+
+  //modal
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+
   //redux
   const dispatch = useDispatch();
 
@@ -47,12 +57,20 @@ const NavbarComponent = () => {
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="/">সাহিত্যের আঙিনা</Navbar.Brand>
+          <Navbar.Brand>
+            <Link href="/" style={{ color: "white", textDecoration: "none" }}>
+              সাহিত্যের আঙিনা
+            </Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Button variant="light" className="me-3 mt-2 mb-2">
+              <Button
+                variant="light"
+                className="me-3 mt-2 mb-2"
+                onClick={handleShow}
+              >
                 বই যোগ করুন
               </Button>
               <Button
@@ -66,6 +84,7 @@ const NavbarComponent = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <AddBookComponent show={showModal} handleClose={handleClose} />
     </>
   );
 };

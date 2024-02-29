@@ -32,7 +32,7 @@ body {
 
 .custom-button-outlined {
   background-color: white !important;
-  color: darkcyan !important;
+  color: #384048 !important;
   border: 2px solid #384048 !important;
   transition: all 0.3s ease !important;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
@@ -45,8 +45,8 @@ body {
 }
 
 .custom-button-outlined:hover {
-  background-color: darkcyan !important;
-  border: 2px solid darkcyan !important;
+  background-color: #384048 !important;
+  border: 2px solid #384048 !important;
   color: white !important;
 }
 
@@ -103,6 +103,45 @@ body {
   transform: scale(1.05) !important;
   cursor: pointer;
 }
+
+/* MODALS */
+.custom-modal {
+  color: #384048 !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  text-align: justify !important;
+}
+.custom-button-modal {
+  border-radius: 40px !important;
+  background-color: white !important;
+  color: #384048 !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+.custom-button-modal:active {
+  background-color: #384048 !important;
+  color: white !important;
+}
+.custom-button-modal:hover {
+  background-color: #384048 !important;
+  color: white !important;
+}
+
+/* INPUT FIELD */
+
+.custom-input {
+  border: none !important;
+  border-bottom: 2px solid #e2e6e9 !important;
+  border-radius: 0 !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+.custom-input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  border-color: #384048 !important;
+}
+
+
 
 
 /* ===================================================================== */
