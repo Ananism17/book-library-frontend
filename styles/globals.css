@@ -1,0 +1,148 @@
+@import url("https://fonts.maateen.me/solaiman-lipi/font.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+  font-family: "SolaimanLipi", sans-serif !important;
+}
+
+/* BUTTONS */
+
+.custom-button-contained {
+  background-color: #4a5159 !important;
+  border: 2px solid #4a5159 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+.custom-button-contained:active {
+  background-color: #384048 !important;
+  border: 2px solid #384048 !important;
+}
+
+.custom-button-contained:hover {
+  background-color: #384048 !important;
+  border: 2px solid #384048 !important;
+}
+
+.custom-button-outlined {
+  background-color: white !important;
+  color: darkcyan !important;
+  border: 2px solid #384048 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+.custom-button-outlined:active {
+  background-color: #384048 !important;
+  color: white !important;
+  border: 2px solid #384048 !important;
+}
+
+.custom-button-outlined:hover {
+  background-color: darkcyan !important;
+  border: 2px solid darkcyan !important;
+  color: white !important;
+}
+
+/* TILES */
+
+.custom-tiles {
+  padding: 20px !important;
+  border: 2px solid #384048 !important;
+  background: #e2e6e9 !important;
+  border-radius: 5px !important;
+  color: #384048 !important;
+  cursor: pointer !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease !important;
+  min-height: 165px !important;
+}
+
+.custom-tiles:hover {
+  background: #384048 !important;
+  color: white !important;
+  transform: scale(1.1) !important;
+}
+
+/* LINKS */
+
+.custom-anchor {
+  color: #384048 !important;
+  text-decoration: none !important;
+}
+
+/* TABLES */
+
+.custom-table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 20px !important;
+  background-color: transparent !important;
+  color: #384048 !important;
+  font-size: 22px !important;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #384048 !important;
+  border-radius: 10px;
+  padding: 8px !important;
+  text-align: center !important;
+  background-color: #e2e6e9 !important;
+}
+
+.custom-table td:hover {
+  background: #384048 !important;
+  color: white !important;
+  transform: scale(1.05) !important;
+  cursor: pointer;
+}
+
+
+/* ===================================================================== */
+/* ===================================================================== */
+/* ========================== LOGIN & REGISTER ========================= */
+/* ===================================================================== */
+/* ===================================================================== */
+
+.login-container {
+  background: url("/images/background.png") center/cover !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 10px !important;
+  padding: 20px !important;
+  flex-direction: column !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+}
+
+.password-input {
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+}
+
+.password-input input {
+  flex-grow: 1 !important;
+}
+
+.password-icon {
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+  cursor: pointer !important;
+}
